@@ -1,35 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class InteractablePickup : PlayerInteraction
+
+namespace Player.Interaction
 {
-    public GameObject takkie;
-    public Animator animator;
-    public SpriteRenderer thisObjSprite;
+  public class GeneralPickup : MonoBehaviour, IPickup, IInteractable
+  {
+    public string ItemName { get => gameObject.name; }
+    public int ItemID { get => itemID; }
+    public int Amount { get => amount; }
+    public Sprite ItemSprite { get => itemSprite; }
 
-    public override void PlayerInteracted(GameObject player, GameObject interactedObject)
+    [SerializeField] int itemID;
+    [SerializeField] int amount;
+    [SerializeField] Sprite itemSprite;
+
+    void Start()
     {
-        if(player.CompareTag("Human") && interactedObject == this.gameObject)
-        {
-            Debug.Log("Interacting");
-            TakkiePickup.spriteToShow = thisObjSprite.sprite;
-            animator.SetTrigger("Pickup");
-            
-            
-
-            Item newItem = new Item("Potato",1,1,thisObjSprite.sprite);
-
-            Inventory inventory = player.GetComponent<Inventory>();
-
-            if (inventory != null)
-            {
-                inventory.AddItem(newItem);
-                
-            }
-
-            this.gameObject.SetActive(false);
-
-        }
+      SubscribeToInteractEvent();
     }
+    public void SubscribeToInteractEvent()
+    {
+      PlayerInteractor.PlayerInteract += PlayerInteracted;
+    }
+
+    public void PlayerInteracted(GameObject player, GameObject interactedObject)
+    {
+      if (interactedObject == this.gameObject)
+      {
+        player.GetComponent<Inventory>().AddItem(this);
+        gameObject.SetActive(false);
+        PlayerInteractor.PlayerInteract -= PlayerInteracted;
+      }   
+    }
+  }
 }
