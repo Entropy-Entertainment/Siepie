@@ -15,8 +15,21 @@ public class InteractablePickup : PlayerInteraction
             Debug.Log("Interacting");
             TakkiePickup.spriteToShow = thisObjSprite.sprite;
             animator.SetTrigger("Pickup");
-            Talk.Potato.has = true;
+            
+            
+
+            Item newItem = new Item("Potato",1,1,thisObjSprite.sprite);
+
+            Inventory inventory = player.GetComponent<Inventory>();
+
+            if (inventory != null)
+            {
+                inventory.AddItem(newItem);
+                
+            }
+
             this.gameObject.SetActive(false);
+
         }
     }
 }
