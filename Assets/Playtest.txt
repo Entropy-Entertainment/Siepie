@@ -1,7 +1,0 @@
-Playtest:
-
-Control scheme somewhere
-Two players one keyboard
-Building walkthrough on top 
-Anim pickup plays multiple times
-Potato floating on player? after walking out of map
