@@ -1701,6 +1701,10 @@ PrefabInstance:
       value: Human
       objectReference: {fileID: 0}
     - target: {fileID: 6163792984902035016, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163792984902035016, guid: c330db86572f42f4caa3b2c217128898, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9671a9d446ef8c84a82e5c0ebb7af706, type: 2}
@@ -1783,6 +1787,10 @@ PrefabInstance:
     - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8122404672833790517, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37151,7 +37159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 0
   amount: 1
-  itemSprite: {fileID: 0}
+  itemSprite: {fileID: 21300000, guid: 6b9e52ecf888ba445b00b2ec395311e9, type: 3}
 --- !u!1 &1167281353
 GameObject:
   m_ObjectHideFlags: 0
