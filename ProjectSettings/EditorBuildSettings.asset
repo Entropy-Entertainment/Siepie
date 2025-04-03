@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Input System Test Scene.unity
-    guid: 68d6ae8925f7ba749b0afb7603881663
+    path: Assets/Level/Scenes/Main Menu.unity
+    guid: 1934da7427dab7a4e81d152a4a0ff935
+  - enabled: 1
+    path: Assets/Level/Scenes/Stockholm.unity
+    guid: 57d0cb7c04bda514cae5300df00c319a
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 613129d19f9a53c47962d48f032b2784, type: 2}
