@@ -8,7 +8,7 @@ namespace Player.Interaction
 {
   public class Inventory : MonoBehaviour
   {
-    public List<IPickup> itemList = new();
+    [SerializeField] public List<IPickup> itemList = new();
     public event Action<IPickup> OnItemAdded;
     public void AddItem(IPickup item) // Use this if you want to add an item - David
     {
