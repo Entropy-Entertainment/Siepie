@@ -66,7 +66,7 @@ public class TransMenuManager : MonoBehaviour
             PlayerInput.Instantiate(siepiePrefab, -1, null, -1, siepieDevice);
             GameObject.FindGameObjectWithTag("Cat").transform.position = GameObject.FindGameObjectWithTag("CatSpawn").transform.position;
             PlayerInput.Instantiate(takkiePrefab, -1, null, -1, takkieDevice);
-            GameObject.FindGameObjectWithTag("Cat").transform.position = GameObject.FindGameObjectWithTag("CatSpawn").transform.position;
+            GameObject.FindGameObjectWithTag("Human").transform.position = GameObject.FindGameObjectWithTag("HumanSpawn").transform.position;
         }
     }
 }
