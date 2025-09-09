@@ -132,7 +132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 35051187}
   - component: {fileID: 35051188}
-  - component: {fileID: 35051189}
   - component: {fileID: 35051190}
   m_Layer: 0
   m_Name: Stokholm Building 2A Side (3)
@@ -208,18 +207,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &35051189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35051186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &35051190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1489,7 +1476,6 @@ GameObject:
   m_Component:
   - component: {fileID: 207893642}
   - component: {fileID: 207893644}
-  - component: {fileID: 207893643}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (3)
   m_TagString: Untagged
@@ -1512,18 +1498,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &207893643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207893641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &207893644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1836,6 +1810,99 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1001 &250978551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_Depth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 0ec44de21105f1048a469d16ff762b6f, type: 2}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: orthographic size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521166624592371467, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941622371360251334, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687119077836967046, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_Name
+      value: Takkie
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6233354
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.739805
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8075710103860502860, guid: c330db86572f42f4caa3b2c217128898, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c330db86572f42f4caa3b2c217128898, type: 3}
 --- !u!1001 &264523769
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1931,7 +1998,6 @@ GameObject:
   m_Component:
   - component: {fileID: 297069248}
   - component: {fileID: 297069250}
-  - component: {fileID: 297069249}
   - component: {fileID: 297069251}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (4)
@@ -1955,18 +2021,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &297069249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297069247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &297069250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2007,7 +2061,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 273137755
   m_SortingLayer: 3
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 95dcc2cde23738b4585dc16da91b1676, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2247,7 +2301,6 @@ GameObject:
   m_Component:
   - component: {fileID: 345008995}
   - component: {fileID: 345008997}
-  - component: {fileID: 345008996}
   - component: {fileID: 345008998}
   m_Layer: 0
   m_Name: Stokholm Building 1A Front (2)
@@ -2271,18 +2324,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &345008996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345008994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &345008997
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2600,7 +2641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 403407436}
   - component: {fileID: 403407435}
-  - component: {fileID: 403407437}
   - component: {fileID: 403407438}
   m_Layer: 0
   m_Name: Stokholm Building 1A Side
@@ -2676,18 +2716,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &403407437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403407434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &403407438
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3003,7 +3031,6 @@ GameObject:
   m_Component:
   - component: {fileID: 443477125}
   - component: {fileID: 443477126}
-  - component: {fileID: 443477127}
   m_Layer: 0
   m_Name: Stokholm Building 2A Side (2)
   m_TagString: Untagged
@@ -3078,18 +3105,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &443477127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443477124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &443699256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5047,7 +5062,6 @@ GameObject:
   m_Component:
   - component: {fileID: 508778804}
   - component: {fileID: 508778807}
-  - component: {fileID: 508778806}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (13)
   m_TagString: Untagged
@@ -5070,18 +5084,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &508778806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508778803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &508778807
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5601,7 +5603,6 @@ GameObject:
   m_Component:
   - component: {fileID: 576645509}
   - component: {fileID: 576645512}
-  - component: {fileID: 576645511}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (11)
   m_TagString: Untagged
@@ -5624,18 +5625,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &576645511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576645508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &576645512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5862,7 +5851,6 @@ GameObject:
   m_Component:
   - component: {fileID: 634662979}
   - component: {fileID: 634662981}
-  - component: {fileID: 634662980}
   m_Layer: 0
   m_Name: Stokholm Building 1A Front (3)
   m_TagString: Untagged
@@ -5885,18 +5873,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &634662980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634662978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &634662981
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7745,6 +7721,158 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!1 &667801567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 667801568}
+  - component: {fileID: 667801570}
+  - component: {fileID: 667801569}
+  m_Layer: 5
+  m_Name: SplitscreenSplitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &667801568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667801567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1435927909}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5, y: 636}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &667801569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667801567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &667801570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667801567}
+  m_CullTransparentMesh: 1
+--- !u!1001 &669331095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.3065886
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.753508
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322734565877409105, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536957203160036614, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_Name
+      value: Siepie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3164381632894938943, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237843177242625883, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: orthographic size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237843177242625883, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237843177242625883, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307512744090632997, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 462dca86cd840ac4d87635f2036b509d, type: 3}
 --- !u!213 &675617462
 Sprite:
   m_ObjectHideFlags: 0
@@ -7965,7 +8093,6 @@ GameObject:
   m_Component:
   - component: {fileID: 710929290}
   - component: {fileID: 710929292}
-  - component: {fileID: 710929291}
   - component: {fileID: 710929293}
   m_Layer: 0
   m_Name: Stokholm Building 1A Side (2)
@@ -7989,18 +8116,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &710929291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710929289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &710929292
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8098,115 +8213,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6086195, y: 1.8673093}
   m_EdgeRadius: 0
---- !u!1001 &782783076
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 471608054928440750, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_Name
-      value: Switch
-      objectReference: {fileID: 0}
-    - target: {fileID: 1097649586951849356, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: TargetDestroy
-      value: 
-      objectReference: {fileID: 1383710462}
-    - target: {fileID: 2573685436009488232, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_Size.x
-      value: 0.33586034
-      objectReference: {fileID: 0}
-    - target: {fileID: 2573685436009488232, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_Size.y
-      value: 0.28951776
-      objectReference: {fileID: 0}
-    - target: {fileID: 2573685436009488232, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.08552669
-      objectReference: {fileID: 0}
-    - target: {fileID: 2573685436009488232, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.04935283
-      objectReference: {fileID: 0}
-    - target: {fileID: 2573685436009488232, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 2573685436009488232, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3549897266882579146, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: cb7b361023b3dc24c9dd75b6f8aec140, type: 3}
-    - target: {fileID: 3549897266882579146, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3549897266882579146, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3549897266882579146, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -2041927339
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6052742801848657685, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c157375d3a444e9439c3d922c513e7bc, type: 3}
 --- !u!1 &805704488
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,7 +8353,6 @@ GameObject:
   m_Component:
   - component: {fileID: 817224141}
   - component: {fileID: 817224143}
-  - component: {fileID: 817224142}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (10)
   m_TagString: Untagged
@@ -8370,18 +8375,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &817224142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817224140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &817224143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8444,7 +8437,6 @@ GameObject:
   m_Component:
   - component: {fileID: 820199487}
   - component: {fileID: 820199486}
-  - component: {fileID: 820199488}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front
   m_TagString: Untagged
@@ -8519,18 +8511,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &820199488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820199485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!213 &890636055
 Sprite:
   m_ObjectHideFlags: 0
@@ -8751,7 +8731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 895776253}
   - component: {fileID: 895776255}
-  - component: {fileID: 895776254}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (5)
   m_TagString: Untagged
@@ -8774,18 +8753,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &895776254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895776252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &895776255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34734,7 +34701,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1057707663}
   - component: {fileID: 1057707665}
-  - component: {fileID: 1057707664}
   m_Layer: 0
   m_Name: Stokholm Building 1A Front (1)
   m_TagString: Untagged
@@ -34757,18 +34723,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1057707664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057707662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1057707665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34947,7 +34901,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1094993527}
   - component: {fileID: 1094993529}
-  - component: {fileID: 1094993528}
   - component: {fileID: 1094993530}
   m_Layer: 0
   m_Name: Stokholm Building 1A Side (1)
@@ -34971,18 +34924,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1094993528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094993526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1094993529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36594,81 +36535,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1135870566
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1135870567}
-  - component: {fileID: 1135870569}
-  - component: {fileID: 1135870568}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1135870567
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135870566}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 14.34, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1959955688}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1135870568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135870566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1135870569
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135870566}
-  m_CullTransparentMesh: 1
 --- !u!1 &1143130484
 GameObject:
   m_ObjectHideFlags: 0
@@ -36825,7 +36691,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1167281354}
   - component: {fileID: 1167281356}
-  - component: {fileID: 1167281355}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (6)
   m_TagString: Untagged
@@ -36848,18 +36713,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1167281355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167281353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1167281356
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37932,7 +37785,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1247728419}
   - component: {fileID: 1247728421}
-  - component: {fileID: 1247728420}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (7)
   m_TagString: Untagged
@@ -37955,18 +37807,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1247728420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247728418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1247728421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38063,7 +37903,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1257018255}
   - component: {fileID: 1257018254}
-  - component: {fileID: 1257018256}
   m_Layer: 0
   m_Name: Stokholm Building 1A Front
   m_TagString: Untagged
@@ -38138,18 +37977,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1257018256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1257018253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1269121953
 GameObject:
   m_ObjectHideFlags: 0
@@ -38160,7 +37987,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1269121954}
   - component: {fileID: 1269121955}
-  - component: {fileID: 1269121956}
   m_Layer: 0
   m_Name: Stokholm Building 2A Side (4)
   m_TagString: Untagged
@@ -38235,18 +38061,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1269121956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269121953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1306276892
 GameObject:
   m_ObjectHideFlags: 0
@@ -38838,7 +38652,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1371927193}
   - component: {fileID: 1371927195}
-  - component: {fileID: 1371927194}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (14)
   m_TagString: Untagged
@@ -38861,18 +38674,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1371927194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371927192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1371927195
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39203,6 +39004,108 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!1 &1435927905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435927909}
+  - component: {fileID: 1435927908}
+  - component: {fileID: 1435927907}
+  - component: {fileID: 1435927906}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1435927906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435927905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1435927907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435927905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1435927908
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435927905}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1435927909
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435927905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 667801568}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1537609462
 GameObject:
   m_ObjectHideFlags: 0
@@ -39213,7 +39116,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1537609465}
   - component: {fileID: 1537609464}
-  - component: {fileID: 1537609463}
   - component: {fileID: 1537609466}
   m_Layer: 0
   m_Name: Stokholm_Train_Station_-_WIP_17-01-2025
@@ -39222,18 +39124,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1537609463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537609462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1537609464
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40126,7 +40016,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1897778810}
   - component: {fileID: 1897778813}
-  - component: {fileID: 1897778812}
   - component: {fileID: 1897778814}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (15)
@@ -40150,18 +40039,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1897778812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1897778809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1897778813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40642,108 +40519,6 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
---- !u!1 &1959955684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1959955688}
-  - component: {fileID: 1959955687}
-  - component: {fileID: 1959955686}
-  - component: {fileID: 1959955685}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1959955685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959955684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1959955686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959955684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1959955687
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959955684}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &1959955688
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959955684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1135870567}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &2024868658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40839,7 +40614,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2029392141}
   - component: {fileID: 2029392142}
-  - component: {fileID: 2029392143}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (2)
   m_TagString: Untagged
@@ -40914,18 +40688,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2029392143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029392140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2033726174
 GameObject:
   m_ObjectHideFlags: 0
@@ -41185,7 +40947,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2114803918}
   - component: {fileID: 2114803921}
-  - component: {fileID: 2114803920}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (12)
   m_TagString: Untagged
@@ -41208,18 +40969,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2114803920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114803917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2114803921
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41492,7 +41241,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2119457102}
   - component: {fileID: 2119457101}
-  - component: {fileID: 2119457103}
   - component: {fileID: 2119457104}
   m_Layer: 0
   m_Name: Stokholm Building 2A Side
@@ -41568,18 +41316,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119457103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119457100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2119457104
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41635,7 +41371,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2121431568}
   - component: {fileID: 2121431570}
-  - component: {fileID: 2121431569}
   - component: {fileID: 2121431571}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (9)
@@ -41659,18 +41394,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2121431569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2121431567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2121431570
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41778,7 +41501,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2130276967}
   - component: {fileID: 2130276966}
-  - component: {fileID: 2130276968}
   - component: {fileID: 2130276969}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (1)
@@ -41854,18 +41576,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2130276968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2130276965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2130276969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41921,7 +41631,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2142137860}
   - component: {fileID: 2142137862}
-  - component: {fileID: 2142137861}
   m_Layer: 0
   m_Name: Stokholm Building 2A Front (8)
   m_TagString: Untagged
@@ -41944,18 +41653,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1573968603}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2142137861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142137859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d57c075404acc40962b5fec3547e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &2142137862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42012,15 +41709,16 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1959955688}
   - {fileID: 1678500730}
   - {fileID: 1646243185}
   - {fileID: 1573968603}
   - {fileID: 1383710466}
   - {fileID: 264523769}
   - {fileID: 2024868658}
-  - {fileID: 782783076}
   - {fileID: 542985401}
   - {fileID: 518785580}
   - {fileID: 1306276893}
   - {fileID: 1092803631}
+  - {fileID: 669331095}
+  - {fileID: 250978551}
+  - {fileID: 1435927909}
