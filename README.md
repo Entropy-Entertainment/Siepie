@@ -4,11 +4,11 @@
 
 >## General Info
 >In this part you can find all the info about the setup of this project. <br>
->Like for example: <br>
->[Code conventions](./Conventions/Code)<br>
->[Github conventions](./Conventions/Github)<br>
->[Map structure](./Conventions/MapStructure)<br>
->[Testing conventions](./Conventions/Testing)<br>
+>Like: <br>
+>[Code conventions](./Conventions/Code.md)<br>
+>[Github conventions](./Conventions/Github.md)<br>
+>[Map structure](./Conventions/MapStructure.mmd)<br>
+>[Testing conventions](./Conventions/Testing.md)<br>
 
 
 >## Credits for this continued project
