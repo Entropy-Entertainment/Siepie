@@ -24,7 +24,7 @@
 >- Tindra: [Github](https://github.com/niyavity)
 >### Dutch:
 > Devs:
->- Me [Github]
+>- Me [Github](https://github.com/Nx27) [Portfolio](https://nxbi.nl) [Linkedin](https://www.linkedin.com/in/nora-de-greeuw-628b71328/)
 >- Fred: [Github](https://github.com/pythonlearner12)
 >
 > Artists:
