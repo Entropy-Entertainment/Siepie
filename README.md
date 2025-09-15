@@ -1,76 +1,32 @@
-# siepie
-dutch and swedish students working together to make a game.
+># Siepie and Takkie and the calico cat curse
+>## *or just Siepie and Takkie \;)*
+>A person in Stockholm receives a terrible curse through unsafe internet browsing, turning them into a calico cat. Their online friend all the way in Amsterdam receives news of this and drops everything to help them figure out how to revert the curse. Now the two of them travel between both Stockholm and Amsterdam in a race against time to try and solve their strange predicament before the transformation becomes permanent!
+
+>## General Info
+>In this part you can find all the info about the setup of this project. <br>
+>Like: <br>
+>[Code conventions](./Conventions/Code.md)<br>
+>[Github conventions](./Conventions/Github.md)<br>
+>[Map structure](./Conventions/MapStructure.mmd)<br>
+>[Testing conventions](./Conventions/Testing.md)<br>
 
 
-## Narrative:
-A person in Stockholm receives a terrible curse through unsafe internet browsing, turning them into a 
-black cat. Their online friend all the way in Amsterdam receives news of this and drops everything to
-help them figure out how to revert the curse. Now the two of them travel between both Stockholm and
-Amsterdam in a race against time to try and solve their strange predicament before the transformation
-becomes permanent!
-
-
-
-
-## game mechanics:
-
-### Cat (Siepie)
-- A computer nerd transformed by supernatural means into a black cat
-
-- Can jump/dash
-- Can talk to other animals(The cat can interact if animal npcs)
-- Can go through small holes(The cat can go in an hole and emerge at the end of the hole)
-
-### Human (Takkie)
-- Can attack enemies
-- Can pick up items
-- Can talk to humans
-
-
-
-### Train
-- Players can travel from Stockholm to Amsterdam
-
-### Enemies
-- Enemies can attack the player and the cat
-- Enemies can only be attack by the Human
-- Enemies slowly walk towards players
-- Enemy has 3 hp (for now) and die if they reach 0 hp
-
-### Interacting with npcs
-- Pressing E near a npc triggers the dialog
-- Theres a check who is interacting with the npc (cat or Human)
-- The Human cant see dialog for the cat and visa versa 
-- You can go to the next part of the dialog by pressing E again untill the dialog finishes
-
-### Pressure plates
-- A player can stand on a square or circle and trigger a door or other event
-- The condition only stays true when then player stays on the pressure plate
-
-### Buttons
-- A player can use E to interact with the button and trigger a door or other event
-- The condition stays permanent
----
-
-
-
-
-
-
-## How to Install and Run the Project
-
-
-
-
-
-## Credits
-David
-Fred
-Kira
-Nora
-Taya
-Henry
-Tindra
-
-
-.
+>## Credits for this continued project
+>I want to give a huge thanks to my Swedish and Dutch friends. We originally started this project through a collaboration initiated by our schools. I had a great amount of fun creating the first version within just a few weeks. What you are looking at right now is my own continuation on what I had envisioned for the project.
+>
+>### Swedes:
+> Devs:
+>- David: [Github](https://github.com/DavidOmegaS)
+>- Henry:  [Github](https://github.com/SlimeMakesItLookEasy) [Instagram](https://www.instagram.com/cardsnapper/) [Linkedin](https://www.linkedin.com/in/john-dickman-0a28b42b2/)
+>
+> Artists:
+>- Taya: [Github](https://github.com/Taya80x) [Linktree](https://linktr.ee/taya80x)
+>- Tindra: [Github](https://github.com/niyavity)
+>### Dutch:
+> Devs:
+>- Me [Github](https://github.com/Nx27) [Portfolio](https://nxbi.nl) [Linkedin](https://www.linkedin.com/in/nora-de-greeuw-628b71328/)
+>- Fred: [Github](https://github.com/pythonlearner12)
+>
+> Artists:
+>- Kira: [Github](https://github.com/0N1ON1)
+>- Denise: [Github](https://github.com/Denisepliese) [Instagram](https://www.instagram.com/dnicey_art/)
