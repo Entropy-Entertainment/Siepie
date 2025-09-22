@@ -1,33 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
+
 
 public class DialogData_Deserialize
 {
-  [Test]
-  public void DialogData_CanDeserializeUID()
+  DialogData dialogData = new();
+  [SetUp]
+  public void Setup()
   {
-    //Act
-    var dialogData = JsonUtility.FromJson<DialogData>(@"{
-      ""lines"": [
-        {
-          ""UID"": ""1"",
-          ""SequenceID"": ""5"",
-          ""Dialog"": ""Hi there"",
-        },
-        {
-          ""UID"": ""Welcome to the game."",
-          ""speakerName"": ""Guide"",
-          ""portraitImagePath"": ""Assets/Images/Guide.png"",
-        }
-      ]
-    }");
+    //Arrange and Act
+    string text = Resources.Load<TextAsset>("DialogData/Stockholm").text;
+    dialogData = JsonUtility.FromJson<DialogData>(text);
+  }
 
-    //Assert
-    Assert.IsNotNull(dialogData.Lines[0].UID);
+  [Test] public void DialogData_DeserializeList()
+  {
+    Assert.AreNotSame(dialogData.Lines.Length, 0);
   }
 
 
+  [Test]
+  public void DialogData_CanDeserializeUID([NUnit.Framework.Range(0, 1, 1)] int index)
+  {
+    //Assert
+    Assert.IsNotNull(dialogData.Lines[0].UID);
+  }
+  [Test]
+  public void DialogData_CanDeserializeSequenceID([NUnit.Framework.Range(0, 1, 1)] int index)
+  {
+    //Assert
+    Assert.IsNotNull(dialogData.Lines[index].SequenceID);
+  }
+  [Test]
+  public void DialogData_CanDeserializeDialog([NUnit.Framework.Range(0, 1, 1)] int index)
+  {
+    //Assert
+    Assert.IsNotNull(dialogData.Lines[index].Dialog);
+  }
 }

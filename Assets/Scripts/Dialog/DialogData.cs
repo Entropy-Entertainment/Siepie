@@ -1,17 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using System;
 
-public class DialogData : MonoBehaviour
+[Serializable]
+public class DialogData
 {
-  internal List<DialogLine> Lines;
-
-
-
-  internal class DialogLine
+  public DialogLine[] Lines;
+  [Serializable] public class DialogLine
   {
-    public string UID;
-    public string SequenceID;
+    public int UID;
+    public int SequenceID;
     public string Dialog;
   }
 }
