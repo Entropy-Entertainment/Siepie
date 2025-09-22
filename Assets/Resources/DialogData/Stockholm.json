@@ -1,0 +1,15 @@
+{
+  "Lines" : 
+  [
+{
+  "UID": 1,
+  "SequenceID": 5,
+  "Dialog": "Hi there"
+},
+{
+  "UID": 2,
+  "SequenceID": 7,
+  "Dialog": "Hi :)"
+}
+  ]
+}
