@@ -10,14 +10,14 @@ namespace Player.Interaction
   public class PlayerInteractor : MonoBehaviour
   {
     public static event Action<GameObject, GameObject> PlayerInteract;
-
+    public CharacterInteraction characterInteraction;
     public float InteractDistance;
     public List<IInteractable> InteractableObjects; //A list over all game objects -Henry
 
     bool controlLocked;
     List<IInteractable> nearbyInteractableObjects; //An interchanging list over all nearby interactable game objects -Henry
 
-    private void Start()
+    public void Start()
     {
       controlLocked = false;
       nearbyInteractableObjects = new();

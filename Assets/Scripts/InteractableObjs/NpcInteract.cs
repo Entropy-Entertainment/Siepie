@@ -4,7 +4,6 @@ namespace Player.Interaction
 {
   public class NpcInteract : MonoBehaviour, IInteractable
   {
-    // Start is called before the first frame update
     void Start()
     {
       SubscribeToInteractEvent();
