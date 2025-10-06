@@ -10,7 +10,6 @@ namespace Player.Interaction
   public class PlayerInteractor : MonoBehaviour
   {
     public static event Action<GameObject, GameObject> PlayerInteract;
-    public CharacterInteraction characterInteraction;
     public float InteractDistance;
     public List<IInteractable> InteractableObjects; //A list over all game objects -Henry
 
