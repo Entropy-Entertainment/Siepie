@@ -8,6 +8,7 @@ namespace Player.Interaction
   {
     [SerializeField] internal int[] dialogUID;
     DialogData.DialogLine[] dialogLines;
+    int currentSequence;
     static internal DialogDeserializer dialogDeserializer = new("DialogData");
     void Start()
     {
@@ -17,7 +18,7 @@ namespace Player.Interaction
 
     public void PlayerInteracted(GameObject player, GameObject interactedObject)
     {
-      throw new System.NotImplementedException();
+      if (interactedObject == this.gameObject) currentSequence++; 
     }
 
     void getAllRelevantUID()
@@ -25,6 +26,7 @@ namespace Player.Interaction
       dialogLines = dialogDeserializer.GetDeserializedObject().Lines
         .Where(aDialogLine => dialogUID.Contains(aDialogLine.UID))
         .ToArray();
+      print(dialogLines.Length);
     }
 
     public void SubscribeToInteractEvent()
