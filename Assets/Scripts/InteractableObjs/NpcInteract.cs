@@ -13,7 +13,6 @@ namespace Player.Interaction
     void Start()
     {
       SubscribeToInteractEvent();
-      getAllRelevantUID();
     }
 
     public void PlayerInteracted(GameObject player, GameObject interactedObject)
