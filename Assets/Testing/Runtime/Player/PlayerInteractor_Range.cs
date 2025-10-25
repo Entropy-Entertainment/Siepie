@@ -25,6 +25,7 @@ public class PlayerInteractor_Range : InputTestFixture
       stubPlayer.AddComponent<PlayerInteractor>();
     // Create dummy NPC to interact with
     stubNpc = new GameObject("StubNpc");
+
     stubNpc.AddComponent<NpcInteract>();
 
     // Set locations outside of interaction range

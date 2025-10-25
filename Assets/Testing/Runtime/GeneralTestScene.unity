@@ -268,7 +268,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1804654137}
-  - component: {fileID: 1804654136}
   m_Layer: 0
   m_Name: npcdummy
   m_TagString: Untagged
@@ -276,19 +275,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1804654136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1804654135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89ee0a03e1fde274694406525fb731cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogUID: 
 --- !u!4 &1804654137
 Transform:
   m_ObjectHideFlags: 0
