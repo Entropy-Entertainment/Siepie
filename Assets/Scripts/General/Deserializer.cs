@@ -10,11 +10,9 @@ public class Deserializer<T>
   public Deserializer(string resourcesApiPath)
   {
     this.resourcesApiPath = resourcesApiPath;
-    ResourcesAPILoader();
-    GetDeserializedObject();
   }
 
-  protected void ResourcesAPILoader()
+  public void ResourcesAPILoader()
   {
     jsonTextFile = Resources.Load<TextAsset>(resourcesApiPath);
   }
@@ -23,7 +21,7 @@ public class Deserializer<T>
   {
     if (jsonTextFile == null)
     {
-      throw new Exception("No JSON file assigned");
+      throw new Exception($"No JSON file assigned -- or you forgot to call {this}.ResourcesAPILoader()");
     }
     if (deserializedObject == null)
     {
