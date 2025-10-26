@@ -17,6 +17,7 @@ public class DialogDeserializer_CurrentScene
     yield return null;
     currentScene = SceneManager.GetActiveScene();
     dialogDeserializer = new DialogDeserializer($"DialogData/{currentScene.name}");
+    dialogDeserializer.ResourcesAPILoader();
   }
 
   [UnityTest]
