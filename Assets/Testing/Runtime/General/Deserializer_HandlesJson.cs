@@ -13,6 +13,7 @@ public class Deserializer_HandlesJson
     Type expectedType = type;
     Type actualType;
     Deserializer<DialogData> deserializer = new(jsonResourceAPIpath);
+    deserializer.ResourcesAPILoader();
     var jsonTextFile = deserializer.GetCurrentlyAssignedJson();
 
     //Act
@@ -27,6 +28,7 @@ public class Deserializer_HandlesJson
   {
     //Arrange
     Deserializer<DialogData> deserializer = new(jsonResourceAPIpath);
+    deserializer.ResourcesAPILoader();
     var jsonTextFile = deserializer.GetCurrentlyAssignedJson();
     //Act
     var deserializedObject = deserializer.GetDeserializedObject();
