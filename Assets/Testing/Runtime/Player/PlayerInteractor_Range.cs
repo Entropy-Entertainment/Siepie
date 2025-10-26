@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
-using UnityEngine.InputSystem.LowLevel;
 
 public class PlayerInteractor_Range : InputTestFixture
 {
@@ -20,13 +19,17 @@ public class PlayerInteractor_Range : InputTestFixture
   [UnitySetUp]
   public IEnumerator TestSetup()
   {
+    base.Setup();
     // Load the test scene
     SceneManager.LoadScene("GeneralTestScene");
-    // Wait a frame so the scene and its GameObjects are available
+
     yield return null;
 
-    // Create stub input device
-    stubController = InputSystem.AddDevice<Gamepad>();
+    // Create dummy NPC to interact with
+    stubNpc = new GameObject("StubNpc");
+    stubNpc.AddComponent<NpcInteract>();
+
+    yield return null;
 
     // In the test scene, there is a Player object already
     stubPlayer = GameObject.Find("Player");
@@ -34,10 +37,6 @@ public class PlayerInteractor_Range : InputTestFixture
 
     if (!stubPlayer.TryGetComponent<PlayerInteractor>(out playerInteractor))
       playerInteractor = stubPlayer.AddComponent<PlayerInteractor>();
-
-    // Create dummy NPC to interact with
-    stubNpc = new GameObject("StubNpc");
-    stubNpc.AddComponent<NpcInteract>();
 
     // Subscribe to PlayerInteract event to see that when it fires 
     interactionHandler = (player, interactedObject) => playerInteractFired = true;
@@ -53,10 +52,14 @@ public class PlayerInteractor_Range : InputTestFixture
   [UnityTest]
   public IEnumerator PlayerInteractor_Range_Mono()
   {
-    Set(stubController.leftStick, Vector2.right);
-    // The button on gamepads that maps to player interaction
-    Set(stubController.buttonWest, 1.0f);
+
+    // Create stub input device
+    stubController = InputSystem.AddDevice<Gamepad>();
+
+    // simulate a click on the right face button (B)
+    Click(stubController.buttonEast);   // or Click(stubController.rightShoulder);
     InputSystem.Update();
+    yield return null; // let the frame run so Unity callbacks fire
 
     if (playerInteractFired == true)
     {
@@ -68,9 +71,8 @@ public class PlayerInteractor_Range : InputTestFixture
   [TearDown]
   public void Teardown()
   {
+    base.TearDown();
     UnityEngine.Object.Destroy(stubNpc);
     PlayerInteractor.PlayerInteract -= interactionHandler;
-    InputSystem.RemoveDevice(stubController);
-    SceneManager.UnloadSceneAsync("GeneralTestScene");
   }
 }
