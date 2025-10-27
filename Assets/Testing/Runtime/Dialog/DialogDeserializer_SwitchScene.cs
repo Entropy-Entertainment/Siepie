@@ -13,7 +13,7 @@ public class DialogDeserializer_SwitchScene
   [UnitySetUp]
   public IEnumerator UnitySetUp()
   {
-    SceneManager.LoadScene("Stockholm");
+    yield return SceneManager.LoadSceneAsync("Stockholm");
     yield return null;
     currentScene = SceneManager.GetActiveScene().name;
     dialogDeserializer = new DialogDeserializer($"DialogData/{currentScene}");
@@ -29,7 +29,5 @@ public class DialogDeserializer_SwitchScene
     yield return null;
     // Assert
     Assert.AreEqual(dialogDeserializer.DialogFilePath.ToLower().Replace("dialogdata/", ""), nextScene.ToLower(), $"No {typeof(DialogData)} for this scene");
-
-
   }
 }

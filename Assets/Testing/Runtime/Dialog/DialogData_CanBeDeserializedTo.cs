@@ -20,7 +20,7 @@ public class DialogData_Deserialize
 
 
   [Test]
-  public void DialogData_CanDeserializeUID([NUnit.Framework.Range(0, 1, 1)] int index)
+  public void DialogData_CanDeserializeUID()
   {
     //Assert
     Assert.IsNotNull(dialogData.Lines[0].UID);
