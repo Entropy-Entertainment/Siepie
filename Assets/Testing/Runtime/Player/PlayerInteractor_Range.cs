@@ -9,7 +9,6 @@ using UnityEngine.TestTools;
 
 public class PlayerInteractor_Range : InputTestFixture
 {
-  Gamepad stubController;
   GameObject stubPlayer;
   GameObject stubNpc;
   PlayerInteractor playerInteractor;
@@ -19,17 +18,16 @@ public class PlayerInteractor_Range : InputTestFixture
   [UnitySetUp]
   public IEnumerator TestSetup()
   {
-    base.Setup();
-    // Load the test scene
-    SceneManager.LoadScene("GeneralTestScene");
+    yield return SceneManager.LoadSceneAsync("GeneralTestScene", LoadSceneMode.Single);
 
     yield return null;
+  }
 
+  void setupInScene()
+  {
     // Create dummy NPC to interact with
     stubNpc = new GameObject("StubNpc");
     stubNpc.AddComponent<NpcInteract>();
-
-    yield return null;
 
     // In the test scene, there is a Player object already
     stubPlayer = GameObject.Find("Player");
@@ -37,6 +35,10 @@ public class PlayerInteractor_Range : InputTestFixture
 
     if (!stubPlayer.TryGetComponent<PlayerInteractor>(out playerInteractor))
       playerInteractor = stubPlayer.AddComponent<PlayerInteractor>();
+    // Set interaction distance || make sure its not zero
+    playerInteractor.InteractDistance = 2.0f;
+    // Refresh IInteractableObjects list
+    playerInteractor.InteractableObjects = IInteractable.GetAllInteractableItems();
 
     // Subscribe to PlayerInteract event to see that when it fires 
     interactionHandler = (player, interactedObject) => playerInteractFired = true;
@@ -45,33 +47,36 @@ public class PlayerInteractor_Range : InputTestFixture
     // Set locations outside of interaction range
     stubPlayer.transform.position = Vector3.zero;
     stubNpc.transform.position = new Vector2(playerInteractor.InteractDistance, 0) + Vector2.right;
-
-    yield break;
   }
 
   [UnityTest]
   public IEnumerator PlayerInteractor_Range_Mono()
   {
+    // Arrange
+    setupInScene();
+    var movePositionAmount = new Vector3(2, 0);
 
-    // Create stub input device
-    stubController = InputSystem.AddDevice<Gamepad>();
+    // Act & Assert
+    Assert.IsNotNull(stubPlayer, "Player object not found in scene!");
+    Assert.IsNotNull(stubNpc, "NPC object not found in scene!");
+    Assert.IsNotNull(playerInteractor.InteractableObjects, "No interactables in scene for test");
 
-    // simulate a click on the right face button (B)
-    Click(stubController.buttonEast);   // or Click(stubController.rightShoulder);
-    InputSystem.Update();
-    yield return null; // let the frame run so Unity callbacks fire
+    Assert.GreaterOrEqual(Vector3.Distance(stubPlayer.transform.position, stubNpc.transform.position), playerInteractor.InteractDistance);
+    Debug.Log($"{playerInteractor.gameObject} shouldn't find anything here ignore the debug log");
+    playerInteractor.OnInteract();
+    Assert.IsFalse(playerInteractFired, "Npc is in range before moving - how did that happen?");
 
-    if (playerInteractFired == true)
-    {
-      Assert.That(Vector3.Distance(stubPlayer.transform.position, stubNpc.transform.position) <= playerInteractor.InteractDistance);
-    }
-    else yield return null;
+    stubPlayer.transform.position += movePositionAmount;
+    Assert.LessOrEqual(Vector3.Distance(stubPlayer.transform.position, stubNpc.transform.position), playerInteractor.InteractDistance, "Player not in range after moving in test");
+    playerInteractor.OnInteract();
+    Assert.IsTrue(playerInteractFired, "PlayerInteract event did not fire when in range");
+
+    yield return null;
   }
 
   [TearDown]
   public void Teardown()
   {
-    base.TearDown();
     UnityEngine.Object.Destroy(stubNpc);
     PlayerInteractor.PlayerInteract -= interactionHandler;
   }
