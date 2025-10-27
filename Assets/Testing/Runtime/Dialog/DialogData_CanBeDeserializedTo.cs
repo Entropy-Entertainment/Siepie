@@ -9,7 +9,7 @@ public class DialogData_Deserialize
   public void Setup()
   {
     //Arrange and Act
-    string text = Resources.Load<TextAsset>("DialogData/Stockholm").text;
+    string text = Resources.Load<TextAsset>("Testing/Dialog/TestDialog").text;
     dialogData = JsonUtility.FromJson<DialogData>(text);
   }
 
