@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InitDialogSystem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+  public static DialogDeserializer dialogDeserializer { get; private set; }
+  void Start()
+  {
+    DontDestroyOnLoad(this.gameObject);
+    dialogDeserializer = new DialogDeserializer($"DialogData/{SceneManager.GetActiveScene().name}");
+  }
 }
