@@ -1,0 +1,25 @@
+classDiagram
+class DialogData {
+  +DialogLine[] Lines
+}
+class DialogLine {
+  +int UID
+  +int SequenceID
+  +string Dialog
+}
+DialogData --> DialogLine : contains
+
+class Deserializer~DialogData~
+class DialogDeserializer {
+  +string DialogFilePath
+  +LoadNewSceneDialog(Scene, Scene)
+}
+Deserializer~DialogData~ <|-- DialogDeserializer
+DialogDeserializer --> DialogData : deserializes
+DialogDeserializer ..> SceneManager : listens to activeSceneChanged
+
+class InitDialogSystem {
+  +static DialogDeserializer dialogDeserializer
+  +Start()
+}
+InitDialogSystem --> DialogDeserializer : creates / initializes
