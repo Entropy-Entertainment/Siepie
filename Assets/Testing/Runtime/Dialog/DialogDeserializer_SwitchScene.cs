@@ -21,8 +21,8 @@ public class DialogDeserializer_SwitchScene
   [UnityTest]
   public IEnumerator DialogDeserializer_CheckSceneChangeForCorrectDialog()
   {
-    var nextScene = "Amsterdam";
     //Arrange
+    var nextScene = "GeneralTestScene";
     yield return null;
     // Act
     SceneManager.LoadScene(nextScene);

@@ -1,0 +1,49 @@
+{
+  "Lines": [
+    {
+      "UID": 0,
+      "SequenceID": 0,
+      "Dialog": "Is een boterham met kaas en worst een rouwe tosti?"
+    },
+    {
+      "UID": 0,
+      "SequenceID": 1,
+      "Dialog": "Hoe bedoel je?"
+    },
+    {
+      "UID": 0,
+      "SequenceID": 2,
+      "Dialog": "Nou, een tosti is een getoaste boterham met ham en gesmolte kaas, maar wat nou als ik een boterham maak zonder hem in een tosti ijzer te stoppen? Hoe zou ik dat dan noemen?"
+    },
+    {
+      "UID": 0,
+      "SequenceID": 3,
+      "Dialog": "Een boterham met kaas en worst? Wat zou je het anders noemen. Je zou het nog een sandwich kunnen noemen maar dan denk ik toch eerder aan een stokbrood met iets ertussen."
+    },
+    {
+      "UID": 0,
+      "SequenceID": 4,
+      "Dialog": "Maar het zijn dezelfde ingredienten als een tosti, alleen nog niet verwarmd dus technisch gezien zou het een rouwe tosti zijn."
+    },
+    {
+      "UID": 0,
+      "SequenceID": 5,
+      "Dialog": "En als ik nou een boterham met kaas en worst maak zonder de intentie te hebben om er een tosti van te maken? Dan klinkt het wel raar als je opeens zegt dat je een rouwe tosti eet."
+    },
+    {
+      "UID": 0,
+      "SequenceID": 6,
+      "Dialog": "Dus wat je zegt is dat het alleen een rouwe tosti zou zijn als je de intentie hebt om er echt een tosti van te maken. en dat het anders zou heten als het gewoon een boterham met kaas en worst is?"
+    },
+    {
+      "UID": 0,
+      "SequenceID": 7,
+      "Dialog": "Maar hoe zou het dan heten?"
+    },
+    {
+      "UID": 0,
+      "SequenceID": 8,
+      "Dialog": "..."
+    }
+  ]
+}
