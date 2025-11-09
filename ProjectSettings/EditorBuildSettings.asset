@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Level/Scenes/Amsterdam.unity
     guid: 508c7500a93f08f48aec5d947ac8f0b1
+  - enabled: 1
+    path: Assets/Testing/Runtime/GeneralTestScene.unity
+    guid: 5ff0aa4cc811fba42b020424efa5e600
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 613129d19f9a53c47962d48f032b2784, type: 2}

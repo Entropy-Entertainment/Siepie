@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 public class Deserializer_HandlesJson
 {
-  string jsonResourceAPIpath = "DialogData/Stockholm";
+  string jsonResourceAPIpath = "Testing/Dialog/TestDialog";
 
   [TestCase(typeof(DialogData))]
   public void Deserializer_GivesTypeBackBasedOnClassGeneric(Type type)

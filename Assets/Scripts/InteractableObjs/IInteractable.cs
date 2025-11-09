@@ -22,7 +22,7 @@ namespace Player.Interaction
       }
       if (interactable.Count == 0)
       {
-        Debug.LogWarning("No IInteractable items found in scene");
+        Debug.LogWarning($"No IInteractable items found in scene - or if the parent was created dynamically recall GetAllInteractableItems() after it's initialized");
       }
       return interactable;
     }
