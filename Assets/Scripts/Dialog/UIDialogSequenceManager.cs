@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 /// This class must link to an INpcDialog object to receive dialog updates.
 /// </summary>
 public class UIDialogSequenceManager : MonoBehaviour
-{ 
+{
   [SerializeField] UIDocument UI;
   Label currentSpeaker;
   Label dialogTextDisplay;
@@ -28,16 +28,11 @@ public class UIDialogSequenceManager : MonoBehaviour
   /// <param name="npcDialogObj">The npc from which this class will recieve updates</param>
   public void StartUIDialogSequence(INpcDialog npcDialogObj)
   {
-    npcDialogObj.UpdateDialog += SetDialogFirstTime;
+    speakerLeft.text = npcDialogObj.;
+    speakerRight.text = speakerRightName;
+    dialogTextDisplay.text = initialText;
+    dialogTextDisplay.style.display = DisplayStyle.None;
 
-    void SetDialogFirstTime(string speakerLeftName, string speakerRightName, string initialText)
-    {
-      speakerLeft.text = speakerLeftName;
-      speakerRight.text = speakerRightName;
-      dialogTextDisplay.text = initialText;
-      dialogTextDisplay.style.display = DisplayStyle.None;
-      npcDialogObj.UpdateDialog -= SetDialogFirstTime;
-    }
     LinkUpdateUIEvent(npcDialogObj);
   }
 
