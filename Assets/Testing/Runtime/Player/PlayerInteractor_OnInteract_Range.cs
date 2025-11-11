@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
-public class PlayerInteractor_OnInteract_Range : InputTestFixture
+public class PlayerInteractor_OnInteract_Range
 {
   GameObject stubPlayer;
   GameObject stubNpc;
