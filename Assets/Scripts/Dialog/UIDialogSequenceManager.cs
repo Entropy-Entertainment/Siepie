@@ -26,26 +26,12 @@ public class UIDialogSequenceManager : MonoBehaviour
   /// Make sure to invoke UpdateDialog event from the INpcDialog object after calling this method to set the initial dialog values.
   /// </summary>
   /// <param name="npcDialogObj">The npc from which this class will recieve updates</param>
-  public void StartUIDialogSequence(INpcDialog npcDialogObj)
+  public void StartUIDialogSequence(string speakerLeft, string speakerRight, string initialText)
   {
-    speakerLeft.text = npcDialogObj.;
-    speakerRight.text = speakerRightName;
+    this.speakerLeft.text = speakerLeft;
+    this.speakerRight.text = speakerRight;
     dialogTextDisplay.text = initialText;
     dialogTextDisplay.style.display = DisplayStyle.None;
-
-    LinkUpdateUIEvent(npcDialogObj);
-  }
-
-  /// <summary>
-  /// UIDialogSequenceManager links to an INpcDialog object to receive dialog updates.
-  /// Only one INpcDialog object can be linked at a time.
-  /// </summary>
-  /// <param name="npcDialogObj">The npc from which this class will recieve updates</param>
-  internal void LinkUpdateUIEvent(INpcDialog npcDialogObj)
-  {
-    UnlinkUpdateUIEvent();
-    npcDialogProvider = npcDialogObj;
-    npcDialogProvider.UpdateDialog += updateUI;
   }
 
   /// <summary>
@@ -54,7 +40,7 @@ public class UIDialogSequenceManager : MonoBehaviour
   /// <param name="speakerName">The character on the left of the dialog box</param>
   /// <param name="listener">The npc with whom the player interacted with (unless the parameters get modified in the NpcInteract class) </param>
   /// <param name="dialogText">The dialog to be displayed in the uxml UI</param>
-  void updateUI(string speakerName, string listener, string dialogText)
+  internal void UpdateUI(string speakerName, string dialogText)
   {
     if (currentSpeaker != null)
       currentSpeaker.text = speakerName;
