@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -12,26 +13,30 @@ public class UIDialogSequenceManager : MonoBehaviour
   Label dialogTextDisplay;
   Label speakerLeft;
   Label speakerRight;
-  INpcDialog npcDialogProvider;
+  Image speakerLeftImage;
+  Image speakerRightImage;
+
 
   void Start()
   {
+    speakerLeftImage = UI.rootVisualElement.Q<Image>("Person1");
+    speakerRightImage = UI.rootVisualElement.Q<Image>("Person2");
     currentSpeaker = UI.rootVisualElement.Q<Label>("CurrentlySpeaking");
     dialogTextDisplay = UI.rootVisualElement.Q<Label>("Text");
     speakerLeft = UI.rootVisualElement.Q<Label>("SpeakerLeft");
     speakerRight = UI.rootVisualElement.Q<Label>("SpeakerRight");
+    UI.rootVisualElement.style.display = DisplayStyle.None;
   }
 
   /// <summary>
   /// Make sure to invoke UpdateDialog event from the INpcDialog object after calling this method to set the initial dialog values.
   /// </summary>
   /// <param name="npcDialogObj">The npc from which this class will recieve updates</param>
-  public void StartUIDialogSequence(string speakerLeft, string speakerRight, string initialText)
+  public void StartUIDialogSequence(string speakerLeft, string speakerRight, string initialText, string currentSpeaker)
   {
+    UI.rootVisualElement.style.display = DisplayStyle.Flex;
     this.speakerLeft.text = speakerLeft;
     this.speakerRight.text = speakerRight;
-    dialogTextDisplay.text = initialText;
-    dialogTextDisplay.style.display = DisplayStyle.None;
   }
 
   /// <summary>
@@ -42,19 +47,32 @@ public class UIDialogSequenceManager : MonoBehaviour
   /// <param name="dialogText">The dialog to be displayed in the uxml UI</param>
   internal void UpdateUI(string speakerName, string dialogText)
   {
-    if (currentSpeaker != null)
-      currentSpeaker.text = speakerName;
-
-    if (dialogTextDisplay != null)
-      dialogTextDisplay.text = dialogText;
+    setSpeakerColor(speakerName);
+    StartCoroutine(TypeText(this.currentSpeaker, speakerName));
+    StartCoroutine(TypeText(dialogTextDisplay, dialogText));
   }
 
-  void UnlinkUpdateUIEvent()
+  public IEnumerator TypeText(Label target, string fullText, float timer = 0.01f)
   {
-    if (npcDialogProvider != null)
+    target.text = "";
+    foreach (char c in fullText)
     {
-      npcDialogProvider.UpdateDialog -= updateUI;
-      npcDialogProvider = null;
+      target.text += c;
+      yield return new WaitForSeconds(timer);
+    }
+  }
+
+  void setSpeakerColor(string speakerName)
+  {
+    if (speakerName == this.speakerLeft.text)
+    {
+      speakerRightImage.style.unityBackgroundImageTintColor = new Color(0.5f, 0.5f, 0.5f, 0.5f);
+      speakerLeftImage.style.unityBackgroundImageTintColor = new Color(1f, 1f, 1f, 1f);
+    }
+    else
+    {
+      speakerRightImage.style.unityBackgroundImageTintColor = new Color(1f, 1f, 1f, 1f);
+      speakerLeftImage.style.unityBackgroundImageTintColor = new Color(0.5f, 0.5f, 0.5f, 0.5f);
     }
   }
 }

@@ -10,6 +10,7 @@ public class DialogDeserializer : Deserializer<DialogData>
   {
     SceneManager.activeSceneChanged += LoadNewSceneDialog;
     Debug.Log($"DialogDeserializer initialized with path: {resourcesApiPath}");
+    Debug.Log($"Current active scene: {SceneManager.GetActiveScene().name}");
   }
 
   void LoadNewSceneDialog(Scene current, Scene next)
