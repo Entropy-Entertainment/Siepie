@@ -32,7 +32,7 @@ public class UIDialogSequenceManager : MonoBehaviour
   /// Make sure to invoke UpdateDialog event from the INpcDialog object after calling this method to set the initial dialog values.
   /// </summary>
   /// <param name="npcDialogObj">The npc from which this class will recieve updates</param>
-  public void StartUIDialogSequence(string speakerLeft, string speakerRight, string initialText, string currentSpeaker)
+  public void StartUIDialogSequence(string speakerLeft, string speakerRight)
   {
     UI.rootVisualElement.style.display = DisplayStyle.Flex;
     this.speakerLeft.text = speakerLeft;
@@ -40,18 +40,23 @@ public class UIDialogSequenceManager : MonoBehaviour
   }
 
   /// <summary>
-  /// Updated the UI dialog box with the provided parameters.
+  /// Update the UI dialog box with the provided parameters and start text-typing coroutines.
   /// </summary>
-  /// <param name="speakerName">The character on the left of the dialog box</param>
-  /// <param name="listener">The npc with whom the player interacted with (unless the parameters get modified in the NpcInteract class) </param>
-  /// <param name="dialogText">The dialog to be displayed in the uxml UI</param>
+  /// <param name="speakerName">Name of the speaking character to display and highlight.</param>
+  /// <param name="dialogText">The dialog text to be displayed in the UI.</param>
   internal void UpdateUI(string speakerName, string dialogText)
   {
     setSpeakerColor(speakerName);
     StartCoroutine(TypeText(this.currentSpeaker, speakerName));
     StartCoroutine(TypeText(dialogTextDisplay, dialogText));
   }
-
+  /// <summary>
+  /// Animate text into a <see cref="Label"/> one character at a time.
+  /// </summary>
+  /// <param name="target">The label that will receive the typed text.</param>
+  /// <param name="fullText">The complete text to type out.</param>
+  /// <param name="timer">Delay in seconds between each character (defaults to 0.01s).</param>
+  /// <returns>Coroutine enumerator suitable for <see cref="MonoBehaviour.StartCoroutine"/>.</returns>
   public IEnumerator TypeText(Label target, string fullText, float timer = 0.01f)
   {
     target.text = "";
@@ -62,6 +67,10 @@ public class UIDialogSequenceManager : MonoBehaviour
     }
   }
 
+  /// <summary>
+  /// Update speaker images' tint to visually highlight the active speaker.
+  /// </summary>
+  /// <param name="speakerName">Name of the currently speaking character.</param>
   void setSpeakerColor(string speakerName)
   {
     if (speakerName == this.speakerLeft.text)

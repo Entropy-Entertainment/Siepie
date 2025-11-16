@@ -1,16 +1,7 @@
-using System;
-
-[Serializable]
-public class DialogData
+public interface IDialogLine
 {
-  public DialogLine[] Lines;
-
-  [Serializable]
-  public class DialogLine : IDialogLine
-  {
     public string Speaker { get; set; }
     public int UID { get; set; }
     public int SequenceID { get; set; }
     public string Dialog { get; set; }
-  }
 }

@@ -9,13 +9,13 @@ public class NpcDialogPreparer : MonoBehaviour
 {
   [SerializeField] internal int[] dialogUID;
   [SerializeField] GameObject UIDialogPrefab;
-  Deserializer<DialogData> dialogDeserializer;
+  Deserializer<DialogData> DialogDeserializer;
   DialogData.DialogLine[] dialogLines;
   UIDialogSequenceManager UIDialogSequenceManager;
   int currentSequence = 0;
   void Start()
   {
-    dialogDeserializer = InitDialogSystem.dialogDeserializer;
+    DialogDeserializer = InitDialogSystem.DialogDeserializer;
     GetComponent<NpcInteract>().WasInteractedWith += dialogIsRequested;
     dialogLines = GetAllRelevantUID();
     var dialogObj = Instantiate(UIDialogPrefab);
@@ -30,7 +30,7 @@ public class NpcDialogPreparer : MonoBehaviour
       var speakers = dialogLines.Select(x => x.Speaker).Distinct().ToList();
       speakers.RemoveAll(s => s == "PLAYER");
 
-      UIDialogSequenceManager.StartUIDialogSequence(player.name, speakers.First(), dialogLines[currentSequence].Dialog, dialogLines[currentSequence].Speaker);
+      UIDialogSequenceManager.StartUIDialogSequence(player.name, speakers.First());
     }
     var currentLine = dialogLines.Where(sq => sq.SequenceID == currentSequence).First();
     if (currentLine.Speaker == "PLAYER") currentLine.Speaker = player.name;
@@ -40,8 +40,8 @@ public class NpcDialogPreparer : MonoBehaviour
 
   DialogData.DialogLine[] GetAllRelevantUID()
   {
-    print(dialogDeserializer.GetDeserializedObject().Lines.Length);
-    return dialogDeserializer.GetDeserializedObject().Lines
+    print(DialogDeserializer.GetDeserializedObject().Lines.Length);
+    return DialogDeserializer.GetDeserializedObject().Lines
       .Where(aDialogLine => dialogUID.Contains(aDialogLine.UID))
       .ToArray();
   }

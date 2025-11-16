@@ -4,15 +4,26 @@ using UnityEngine.SceneManagement;
 [DefaultExecutionOrder(-100)]
 public class InitDialogSystem : MonoBehaviour
 {
-  public static DialogDeserializer dialogDeserializer { get; private set; }
+  [SerializeField] public static string DialogFilePath = "DialogData"; //Dont end the path with a "/" 
+  public static Deserializer<DialogData> DialogDeserializer { get; private set; }
   void Start()
   {
     DontDestroyOnLoad(this.gameObject);
-    dialogDeserializer = new DialogDeserializer($"DialogData/{SceneManager.GetActiveScene().name}");
-    dialogDeserializer.ResourcesAPILoader();
-    if(dialogDeserializer.GetDeserializedObject() == null)
-    {
-      Debug.LogWarning("Couldnt deserialize the json from the starting scene");
-    }
+    SetDeserializer(new Deserializer<DialogData>(DialogFilePath, SceneManager.GetActiveScene().name));
+    SceneManager.activeSceneChanged += LoadNewSceneDialog;
+  }
+
+  public void SetDeserializer(Deserializer<DialogData> dialogDeserializer)
+  {
+    DialogDeserializer = dialogDeserializer;
+    DialogDeserializer.ResourcesAPILoader();
+    DialogDeserializer.GetDeserializedObject();
+  }
+
+  void LoadNewSceneDialog(Scene current, Scene next)
+  {
+    DialogDeserializer.SceneFileName = next.name;
+    DialogDeserializer.ResourcesAPILoader();
+    DialogDeserializer.GetDeserializedObject();
   }
 }

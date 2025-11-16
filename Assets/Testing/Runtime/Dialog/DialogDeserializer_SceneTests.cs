@@ -5,7 +5,7 @@ using UnityEngine.TestTools;
 
 public class DialogDeserializer_CurrentScene
 {
-  DialogDeserializer dialogDeserializer;
+  Deserializer<DialogData> dialogDeserializer;
   Scene currentScene;
   [UnitySetUp]
   public IEnumerator UnitySetUp()
@@ -13,7 +13,7 @@ public class DialogDeserializer_CurrentScene
     SceneManager.LoadScene("Stockholm");
     yield return null;
     currentScene = SceneManager.GetActiveScene();
-    dialogDeserializer = new DialogDeserializer($"DialogData/{currentScene.name}");
+    dialogDeserializer = new Deserializer<DialogData>("DialogData", currentScene.name);
     dialogDeserializer.ResourcesAPILoader();
   }
 

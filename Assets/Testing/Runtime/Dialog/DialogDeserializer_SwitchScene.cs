@@ -3,9 +3,9 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 
-public class DialogDeserializer_SwitchScene
+public class InitDialogSystem_SwitchScene
 {
-  DialogDeserializer dialogDeserializer;
+  Deserializer<DialogData> dialogDeserializer;
   string currentScene;
 
   [UnitySetUp]
@@ -14,10 +14,10 @@ public class DialogDeserializer_SwitchScene
     yield return SceneManager.LoadSceneAsync("Stockholm");
     yield return null;
     currentScene = SceneManager.GetActiveScene().name;
-    dialogDeserializer = new DialogDeserializer($"DialogData/{currentScene}");
+    dialogDeserializer = new Deserializer<DialogData>("DialogData", currentScene);
   }
   [UnityTest]
-  public IEnumerator DialogDeserializer_CheckSceneChangeForCorrectDialog()
+  public IEnumerator InitDialogSystem_CheckSceneChangeForCorrectName()
   {
     //Arrange
     var nextScene = "GeneralTestScene";
@@ -26,6 +26,6 @@ public class DialogDeserializer_SwitchScene
     SceneManager.LoadScene(nextScene);
     yield return null;
     // Assert
-    Assert.AreEqual(dialogDeserializer.DialogFilePath.ToLower().Replace("dialogdata/", ""), nextScene.ToLower(), $"No {typeof(DialogData)} for this scene");
+    Assert.AreEqual(dialogDeserializer.SceneFileName.ToLower().Replace("dialogdata/", ""), nextScene.ToLower(), $"No {typeof(DialogData)} for this scene");
   }
 }
